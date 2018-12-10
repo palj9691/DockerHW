@@ -15,7 +15,7 @@ agent {label 'linux'}
 		steps {
 			sh "docker run -d --name classweb1 -p 80:8080 classweb:${BUILD_NUMBER}"
 			sh "EXPOSE: 8080"
-			sh 'curl $(curl 18.234.59.33/latest/meta-data/local-ipv4) | grep "super"'
+			sh 'curl $(curl 18.232.164.196/latest/meta-data/local-ipv4) | grep "super"'
 		}
 	}
 	post {
